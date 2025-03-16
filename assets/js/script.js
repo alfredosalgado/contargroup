@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (btn) {
     btn.addEventListener('click', function (event) {
       event.preventDefault(); // Evita que el navegador siga el enlace `href`
-      const phone = '56955339960'; // Número de teléfono
+      const phone = '56936917304'; // Número de teléfono
       const message = 'Hola, estoy interesado en más información.';
       window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
     });
