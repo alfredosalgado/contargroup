@@ -699,6 +699,69 @@ body {
   }
 }
 
+
+/* Colores personalizados */
+.plan-text-purple { color: #fcbe5f; }
+.plan-text-red { color: #dc3545; }
+
+/* Estilo del botón circular */
+.plan-btn-purple {
+  background-color: #fcbe5f;
+  color: white;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+  font-size: 14px;
+}
+.plan-btn-purple:hover {
+  background-color: #f5a329;
+}
+
+/* Fondo con imagen borrosa y overlay */
+.plan-container {
+  position: relative;
+  min-height: 100vh;
+}
+.plan-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/contador.jpg'); /* Reemplaza con tu imagen */
+  background-size: cover;
+  filter: blur(5px);
+  z-index: -1;
+}
+.plan-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: -1;
+}
+
+/* Ajustes para el texto del toggle */
+.plan-toggle-link {
+  color: #fcbe5f;
+  text-decoration: none;
+}
+.plan-toggle-link:hover {
+  text-decoration: underline;
+}
+
+
+
+
 @media (min-width: 371px) {
   .texth {
     height: 11.5rem;

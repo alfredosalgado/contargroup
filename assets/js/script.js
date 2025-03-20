@@ -151,3 +151,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const toggleLinks = document.querySelectorAll('.plan-toggle-link');
+  toggleLinks.forEach(toggle => {
+    const collapseId = toggle.getAttribute('href').substring(1);
+    const collapse = document.getElementById(collapseId);
+    collapse.addEventListener('shown.bs.collapse', function () {
+      toggle.innerHTML = 'Menos detalles <i class="fas fa-chevron-up"></i>';
+    });
+    collapse.addEventListener('hidden.bs.collapse', function () {
+      toggle.innerHTML = 'Más detalles <i class="fas fa-chevron-down"></i>';
+    });
+  });
+});
