@@ -725,7 +725,7 @@ body {
 /* Fondo con imagen borrosa y overlay */
 .plan-container {
   position: relative;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 .plan-container::before {
   content: "";
