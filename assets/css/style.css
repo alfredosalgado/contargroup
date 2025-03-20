@@ -27,7 +27,7 @@
   background-image: url('../img/portada/1.jpg');
   background-size: cover;
   background-position: center;
-  border-radius: 10px;
+  
 }
 
 .div-con-imagen::before {
@@ -37,7 +37,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  
   background-color: #000000;
   opacity: 0.5; /* Ajusta la opacidad para el efecto deseado */
 
@@ -49,7 +49,7 @@
 }
 
 .bg-etapa1 {
-  background-color: #128c7e91;
+  background-color: #fcbd5fa8;
 }
 
 .bg-etapa2 {
@@ -125,6 +125,7 @@
   background-image: url('../img/servcon.webp');
   background-size: cover;
   background-position: center;
+  border-top: 3px solid #fcbe5f; /* Grosor, estilo y color */
 }
 
 .div-con-imagen3::before {
@@ -139,6 +140,7 @@
 
   pointer-events: none; /* Permite interactuar con los elementos debajo */
 }
+
 
 .hp {
   color: white;
@@ -174,6 +176,10 @@
   to {
     opacity: 1;
   }
+}
+
+.text-pc {
+  margin-bottom: 100px;
 }
 
 .aparicion {
@@ -219,6 +225,7 @@
   transition: transform 9s ease-in-out; /* Animación suave para la escala */
   pointer-events: none;
 }
+
 
 /* Aplicamos la animación solo a la imagen activa */
 .carousel-item.active img {
@@ -357,6 +364,7 @@
 }
 /*-------------------------------------------------------------------*/
 
+
 /* Estilo para las cards */
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el agrandamiento y la sombra */
@@ -406,6 +414,14 @@
 
 .texto-fade {
   opacity: 0;
+}
+
+.servinc {
+  position: relative;
+  top: -50%;
+  transform: translateY(-50%);
+  margin-left: 27%;
+  margin-right: 27%;
 }
 
 .texto-visible {
@@ -569,7 +585,7 @@ html, body {
   background-color: rgba(255, 255, 255, 0.863);
 }
 
-.card:hover {
+.card2:hover {
   background-color: white;
 }
 
@@ -653,6 +669,24 @@ body {
   height: 100%;
 }
 
+.bg-ryf8 {
+
+  background: linear-gradient(to right, #6c757d 0%, #6c757d 25%, #fcbe5f 50%, #6c757d 75%, #6c757d 100%);
+  position: relative;
+}
+
+.bg-ryf8::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px; /* Ajusta la altura del difuminado */
+  background: linear-gradient(to bottom, #6c757d, transparent);
+}
+
+
+
 /* Animación de aparición */
 @keyframes fadeIn2 {
   from {
@@ -697,6 +731,33 @@ body {
 
 
 @media (min-width: 768px) {
+  .div-con-imagen {
+    position: relative;
+    width: 100%;
+    background-image: url('../img/portada/1.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 5%;
+    
+  }
+  
+  .div-con-imagen::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    
+    background-color: #000000;
+    opacity: 0.5; /* Ajusta la opacidad para el efecto deseado */
+  
+    pointer-events: none; /* Permite interactuar con los elementos debajo */
+  }
+
+
   .texth {
     height: 11rem;
   }
